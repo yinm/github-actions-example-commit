@@ -11,6 +11,8 @@ jobs:
       - run: echo "Hello, world!"
 
   commit:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
